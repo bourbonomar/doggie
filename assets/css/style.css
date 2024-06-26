@@ -189,14 +189,54 @@ body {
 
 .h3 { font-size: var(--fs-3); }
 
+.hero-title {
+  font-size: 7rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.btn1 {
+  background-color: var(--portland-orange);
+  color: var(--white);
+  max-width: max-content;
+  padding: 10px 25px;
+  font-weight: var(--fw-700);
+  border-radius: 50px;
+  transition: var(--transition-1);
+  position: absolute; /* Posiciona absolutamente dentro de su contenedor */
+  top: 50%; /* Centra verticalmente */
+  right: 20px; /* Ajusta este valor según sea necesario para posicionar a la derecha */
+  transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+}
+
+.btn1:hover {
+  background-color: var(--white);
+  color: black;
+}
+
+.btn1.clicked {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.image-container {
+  position: relative; /* Necesario para que el botón pueda posicionarse absolutamente dentro de este contenedor */
+}
+
+
 .btn {
   background-color: var(--black);
   color: var(--white);
   max-width: max-content;
-  padding: 8px 25px;
+  padding: 10px 25px;
   font-weight: var(--fw-700);
   border-radius: 50px;
   transition: var(--transition-1);
+}
+
+.btn.clicked {
+  background-color: var(--blue); /* Define el color que quieras después del clic */
 }
 
 .section-title {
